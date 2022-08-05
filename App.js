@@ -8,12 +8,12 @@ var cors = require('cors');
 app.use(cors());
 app.use("/public", express.static(__dirname + "/public"));
 
-const PORT = 3001 | process.env.PORT;
+const port = process.env.PORT || 3001;
 
-http.listen(PORT, function () {
+http.listen(port, function () {
     console.log("Conectado!");
 
-    app.get("/exportData", function (request, result) {
+    app.get("/baixarcsv", function (request, result) {
 
         var data = [{
             "id": 1,
