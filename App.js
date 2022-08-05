@@ -77,4 +77,29 @@ http.listen(port, function () {
             })
             .pipe(ws);
     });
+
+    app.get("/baixar", function (request, result) {
+
+        var data = [{
+            "id": 1,
+            "name": "Leandro",
+            "age": 29
+        }, {
+            "id": 2,
+            "name": "Eduardo",
+            "age": 31
+        }, {
+            "id": 3,
+            "name": "Kerleston",
+            "age": 33
+        },
+        {
+            "id": 4,
+            "name": "Diego",
+            "age": 33
+        }
+        ];
+
+        result.status(200).send(data);
+    });
 });
