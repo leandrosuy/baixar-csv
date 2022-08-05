@@ -1,0 +1,17 @@
+{
+  "name": "servidor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon App.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "fast-csv": "^4.3.6",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.19"
+  }
+}
